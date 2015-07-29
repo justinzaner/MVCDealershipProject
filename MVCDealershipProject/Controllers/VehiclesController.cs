@@ -47,6 +47,18 @@ namespace MVCDealershipProject.Controllers
             {
                 vehicles = vehicles.Where(x => x.Color == vehicleColor);
             }
+
+            //search for vehicles within a certain price range
+            if (!string.IsNullOrEmpty(vehiclePriceRangeStart))
+            {
+                decimal PriceRangeStart = Convert.ToDecimal(vehiclePriceRangeStart);
+                vehicles = vehicles.Where(x => x.MSRP >= PriceRangeStart);
+                if (!string.IsNullOrEmpty(vehiclePriceRangeEnd))
+                {
+                    decimal PriceRangeEnd = Convert.ToDecimal(vehiclePriceRangeEnd);
+                    vehicles = vehicles.Where(x => x.MSRP <= PriceRangeEnd);
+                }
+            }
             return View(vehicles); 
         }
         
