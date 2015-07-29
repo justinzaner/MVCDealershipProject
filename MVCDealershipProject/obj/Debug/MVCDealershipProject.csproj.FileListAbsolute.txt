@@ -188,3 +188,7 @@ C:\Users\Mara\Documents\Visual Studio 2013\Projects\MVCDealershipProject\MVCDeal
 C:\Users\Mara\Documents\Visual Studio 2013\Projects\MVCDealershipProject\MVCDealershipProject\obj\Debug\MVCDealershipProject.dll
 C:\Users\Mara\Documents\Visual Studio 2013\Projects\MVCDealershipProject\MVCDealershipProject\obj\Debug\MVCDealershipProject.pdb
 >>>>>>> b2c0e0b6188673d9e09c1f2dee0becf35f00a1e1
+C:\Users\Dell User\Documents\Visual Studio 2013\Projects\MVCDealershipProject\MVCDealershipProject\obj\Debug\MVCDealershipProject.Migrations.InitialCreate.resources
+C:\Users\Dell User\Documents\Visual Studio 2013\Projects\MVCDealershipProject\MVCDealershipProject\obj\Debug\MVCDealershipProject.Migrations.Initial.resources
+C:\Users\Dell User\Documents\Visual Studio 2013\Projects\MVCDealershipProject\MVCDealershipProject\obj\Debug\MVCDealershipProject.Migrations.Image.resources
+C:\Users\Dell User\Documents\Visual Studio 2013\Projects\MVCDealershipProject\MVCDealershipProject\obj\Debug\MVCDealershipProject.csproj.GenerateResource.Cache
