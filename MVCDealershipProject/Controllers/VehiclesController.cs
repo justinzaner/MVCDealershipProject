@@ -77,7 +77,7 @@ namespace MVCDealershipProject.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Make,Model,Year,Color,MilePerGallon,MSRP")] Vehicle vehicle)
+        public ActionResult Create([Bind(Include = "ID,Make,Model,Year,Color,MilePerGallon,MSRP,Image")] Vehicle vehicle)
         {
             if (ModelState.IsValid)
             {

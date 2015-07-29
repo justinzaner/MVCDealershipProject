@@ -15,6 +15,7 @@ namespace MVCDealershipProject.Models
         public string Color { get; set; }
         public double MilePerGallon { get; set; }
         public decimal MSRP { get; set; }
+        public string Image { get; set; }
         
     }
 

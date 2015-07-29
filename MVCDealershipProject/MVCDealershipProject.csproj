@@ -175,6 +175,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201507291349536_InitialCreate.cs" />
+    <Compile Include="Migrations\201507291349536_InitialCreate.Designer.cs">
+      <DependentUpon>201507291349536_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201507291514475_Initial.cs" />
+    <Compile Include="Migrations\201507291514475_Initial.Designer.cs">
+      <DependentUpon>201507291514475_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201507291520598_Image.cs" />
+    <Compile Include="Migrations\201507291520598_Image.Designer.cs">
+      <DependentUpon>201507291520598_Image.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -246,6 +259,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -253,6 +267,17 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201507291349536_InitialCreate.resx">
+      <DependentUpon>201507291349536_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201507291514475_Initial.resx">
+      <DependentUpon>201507291514475_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201507291520598_Image.resx">
+      <DependentUpon>201507291520598_Image.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
