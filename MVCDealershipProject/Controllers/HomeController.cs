@@ -29,7 +29,7 @@ namespace MVCDealershipProject.Controllers
                      Model = vehicleGroup.Key.modelG,
                      Year = vehicleGroup.Key.yearG,
                      VehicleCount = vehicleGroup.Count()
-        };
+                 };
 
             return View(data);
         }
