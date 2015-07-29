@@ -1,7 +1,62 @@
-﻿@{
+﻿@model IEnumerable<MVCDealershipProject.ViewModels.InventoryGroup>
+
+@{
     ViewBag.Title = "About";
 }
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+<h2>Our current inventory:</h2>
+
+<table>
+    <tr>
+        <th>
+            Make
+        </th>
+        <th>
+            &nbsp&nbsp&nbsp
+        </th>
+        <th>
+            Model
+        </th>
+        <th>
+            &nbsp&nbsp&nbsp
+        </th>
+        <th>
+            Year
+        </th>
+        <th>
+            &nbsp&nbsp&nbsp
+        </th>
+        <th>
+            Number in Inventory
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Make)
+            </td>
+            <th>
+                &nbsp&nbsp&nbsp
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Model)
+            </td>
+            <th>
+                &nbsp&nbsp&nbsp
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Year)
+            </td>
+            <th>
+                &nbsp&nbsp&nbsp
+            </th>
+            <td>
+                @item.VehicleCount
+            </td>
+        </tr>
+    }
+</table>
