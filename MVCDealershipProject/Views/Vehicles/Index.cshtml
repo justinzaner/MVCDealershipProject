@@ -14,6 +14,8 @@
         Make: @Html.TextBox("SearchString")
         Model: @Html.DropDownList("vehicleModel", "All")
         Color: @Html.DropDownList("vehicleColor", "All")
+        MSRP Range: @Html.TextBox("vehiclePriceRangeStart") @Html.TextBox("vehiclePriceRangeEnd")
+
         MSRP Range: @Html.TextBox("vehiclePriceRangeStart") @Html.TextBox("vehiclePriceRangeEnd")<br />
         <input type="submit" value="Filter" />
     </p>
