@@ -12,9 +12,12 @@ namespace MVCDealershipProject.Controllers
 {
     public class VehiclesController : Controller
     {
+        
         private VehicleDBContext db = new VehicleDBContext();
+        [Authorize]
 
-        // GET: Vehicles
+        [AllowAnonymous]
+        // GET: Vehicles 
         public ActionResult Index(string searchString, string vehicleModel, string vehicleColor, string vehiclePriceRangeStart, string vehiclePriceRangeEnd)
         {
             var vehicles = from m in db.Vehicles
@@ -79,10 +82,11 @@ namespace MVCDealershipProject.Controllers
         }
 
         // GET: Vehicles/Create
+        [Authorize(Users ="Admin@yahoo.com")]
         public ActionResult Create()
         {
             return View();
-        }
+        } 
 
         // POST: Vehicles/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
@@ -102,6 +106,7 @@ namespace MVCDealershipProject.Controllers
         }
 
         // GET: Vehicles/Edit/5
+        [Authorize(Users = "Admin@yahoo.com")]
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -120,6 +125,7 @@ namespace MVCDealershipProject.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
+        [Authorize(Users = "Admin@yahoo.com")]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "ID,Make,Model,Year,Color,MilePerGallon,MSRP")] Vehicle vehicle)
         {
@@ -133,6 +139,7 @@ namespace MVCDealershipProject.Controllers
         }
 
         // GET: Vehicles/Delete/5
+        [Authorize(Users = "Admin@yahoo.com")]
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -149,6 +156,7 @@ namespace MVCDealershipProject.Controllers
 
         // POST: Vehicles/Delete/5
         [HttpPost, ActionName("Delete")]
+        [Authorize(Users = "Admin@yahoo.com")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
