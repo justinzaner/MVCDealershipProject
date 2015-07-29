@@ -203,6 +203,15 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="images\02impala.jpg" />
+    <Content Include="images\68vette.jpg" />
+    <Content Include="images\aura.jpg" />
+    <Content Include="images\auraRED.jpg" />
+    <Content Include="images\chrysler300.jpg" />
+    <Content Include="images\econoline.jpg" />
+    <Content Include="images\mini13.jpg" />
+    <Content Include="images\RAMblue.jpg" />
+    <Content Include="images\RAMsilver.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -260,7 +269,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -294,7 +302,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>64137</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
